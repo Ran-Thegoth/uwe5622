@@ -1,0 +1,1 @@
+cmd_/home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.ko := aarch64-linux-gnueabihf-ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.ko /home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.o /home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.mod.o;  true

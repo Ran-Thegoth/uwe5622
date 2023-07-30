@@ -269,7 +269,7 @@ static void sprdwl_flush_data_txlist(struct sprdwl_tx_msg *tx_msg)
 	/*wait until data list sent completely and freed by HIF*/
 	wl_debug("%s check if data freed complete start\n", __func__);
 	while (!list_empty(data_list) && (cnt < 1000)) {
-		usleep_range(2500, 3000);
+		usleep_range(250, 300);
 		cnt++;
 	}
 
@@ -466,7 +466,7 @@ static void sprdwl_sdio_flush_txlist(struct sprdwl_msg_list *list)
 	/*wait until cmd list sent completely and freed by HIF*/
 	while (!list_empty(&list->cmd_to_free) && (cnt < 3000)) {
 		wl_debug("%s cmd not yet transmited", __func__);
-		usleep_range(2950, 3050);
+		usleep_range(295, 305);
 		cnt++;
 	}
 	while ((msgbuf = sprdwl_peek_msg_buf(list))) {
@@ -1356,7 +1356,7 @@ static int sprdwl_tx_work_queue(void *data)
 		if (tx_msg->thermal_status == THERMAL_WIFI_DOWN) {
 			if (sprdwl_msg_tx_pended(&tx_msg->tx_list_cmd))
 				sprdwl_tx_cmd(intf, &tx_msg->tx_list_cmd);
-			usleep_range(100, 200);
+			usleep_range(50, 100);
 			continue;
 		}
 
@@ -1393,7 +1393,7 @@ static int sprdwl_tx_work_queue(void *data)
 
 		if (!list_empty(&tx_msg->xmit_msg_list.to_send_list)) {
 			if (sprdwl_handle_to_send_list(intf, tx_msg->xmit_msg_list.mode)) {
-				usleep_range(590, 610);
+				usleep_range(50, 100);
 				continue;
 			}
 		}

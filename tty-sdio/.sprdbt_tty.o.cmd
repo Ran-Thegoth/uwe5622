@@ -1,0 +1,1 @@
+cmd_/home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.o := aarch64-linux-gnueabihf-ld -EL  -maarch64elf -z noexecstack   -r -o /home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.o @/home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.mod 
