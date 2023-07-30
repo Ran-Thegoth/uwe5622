@@ -1,1 +1,0 @@
-cmd_/home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.mod := printf '%s\n'   tty.o rfkill.o lpm.o woble.o alignment/sitm.o dump.o | awk '!x[$$0]++ { print("/home/nick/work/H616/uwe5622/tty-sdio/"$$0) }' > /home/nick/work/H616/uwe5622/tty-sdio/sprdbt_tty.mod

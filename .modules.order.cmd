@@ -1,1 +1,0 @@
-cmd_/home/nick/work/H616/uwe5622/modules.order := {   cat /home/nick/work/H616/uwe5622/unisocwcn/modules.order;   cat /home/nick/work/H616/uwe5622/unisocwifi/modules.order;   cat /home/nick/work/H616/uwe5622/tty-sdio/modules.order; :; } > /home/nick/work/H616/uwe5622/modules.order
